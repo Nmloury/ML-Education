@@ -1,1 +1,31 @@
-# Getting Started
+## Getting Started
+
+---
+
+| **Question**                                                                 | **Notes/Answers**                                                                                                                                                                                                                                                                                                    |
+|:-----------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1. What are the main myths about deep learning?**                          | - **No need for advanced math** beyond high school level.<br>- **Massive datasets** are **not** mandatory.<br>- **Expensive hardware** (like large GPU clusters) is **not** required.<br>- A **PhD** is unnecessary.<br>- Practical, accessible approaches often yield **world-class** results.                                                              |
+| **2. Why does deep learning matter, and what makes it flexible?**            | - Uses **multiple layers** of neural networks to extract features.<br>- Learns by **minimizing error** through backpropagation.<br>- Has **state-of-the-art performance** in computer vision, NLP, and more.<br>- Quickly adapts to **many domains** (e.g., medicine, finance, robotics).<br>- Works with relatively modest resources or free GPU options. |
+| **3. Where is deep learning considered the best in the world today?**        | - **Natural language processing** (speech recognition, text classification).<br>- **Computer vision** (autonomous driving, facial recognition).<br>- **Medical imaging** (tumor detection, radiology).<br>- **Biology** (protein folding, genomics).<br>- **Recommendation systems**, robotics, and playing complex games.                                |
+| **4. What is the difference between classification and regression?**         | - **Classification** predicts **discrete categories** (e.g., cat vs. dog).<br>- **Regression** predicts **continuous values** (e.g., movie rating from 0.5 to 5.0).<br>- The choice depends on the **nature of the target** (label).<br>- `y_range` is used in fastai for bounding continuous outputs.                                                      |
+| **5. What is a pretrained model, and why use fine-tuning?**                  | - **Pretrained models** are initially trained on large datasets (e.g., ImageNet).<br>- They learn **general features** in early layers (edges, shapes).<br>- **Fine-tuning** adapts the final (head) layers to a new task.<br>- Saves training time and reduces data needs.<br>- Often outperforms training from scratch.                                   |
+| **6. What does overfitting mean, and why is it a concern?**                  | - Occurs when a model **memorizes** training data instead of learning **generalizable** patterns.<br>- Leads to **poor performance** on new/unseen data.<br>- Common with small data or very large models.<br>- Proper **validation** and **regularization** methods help prevent it.<br>- Must be monitored with validation metrics.                      |
+| **7. How do validation and test sets prevent overfitting and bias?**         | - **Validation set** checks generalization during development (hyperparameter tuning).<br>- **Test set** is held back for final evaluation only.<br>- Avoids “cheating” by repeatedly tuning to the same data.<br>- Each set must reflect **real-world** data distribution.<br>- Critical for **trustworthy** performance estimates.                         |
+| **8. Why might a random validation split be insufficient for certain data?** | - **Time-series** data requires a split by date (training on past, validating on future).<br>- Avoid overlapping subjects (e.g., same driver/boat) in both sets.<br>- Some tasks need domain-specific splitting (e.g., new geography).<br>- Random splits can **inflate accuracy** if overlapping entities are included.<br>- Domain knowledge is key.            |
+| **9. What is a GPU, and why does it help deep learning?**                    | - A **Graphics Processing Unit** (GPU) handles large-scale parallel computation.<br>- **Matrix operations** (core to neural nets) are faster on GPUs than CPUs.<br>- Significantly **shortens training time** for big models.<br>- Accessible via **cloud services** or local setups.<br>- Essential for most deep learning tasks.                               |
+| **10. What is the best approach to avoid AI failures in an organization?**   | - Keep a **hidden test set** that remains unseen by model developers.<br>- Use **metrics** aligned with real-world needs.<br>- Compare vendor or in-house solutions to a **simple baseline** for perspective.<br>- Ensure **data integrity** (representativeness, no leakage).<br>- Maintain **caution** about bias and feedback loops.                      |
+
+---
+
+## Summary (Key Points)
+
+1. Deep learning’s layered approach is powerful for varied tasks (vision, NLP, medicine, etc.).  
+2. Myths about needing advanced math, massive data, or high-end hardware are often overstated.  
+3. Properly splitting data into training, validation, and test sets preserves honest performance estimates.  
+4. **Overfitting** is a major pitfall—models memorize rather than generalize if not carefully validated.  
+5. **Pretrained models** and **fine-tuning** accelerate learning by reusing learned representations.  
+6. **Classification** predicts categories; **regression** predicts continuous values; `y_range` guides the latter.  
+7. **Random splits** can be misleading for time-series or grouped data—domain-specific splitting is essential.  
+8. **GPUs** excel at parallel computations, significantly speeding up training.  
+9. Ensuring **robust metrics** and **hidden test sets** avoids performance inflation and fosters real-world reliability.  
+10. AI success relies on ethical considerations, data integrity, and avoidance of feedback loops.
