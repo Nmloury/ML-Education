@@ -7,6 +7,7 @@
     - before you clean your data, you train a model! This seems pretty counter intuitive but will make sense
 
 ## Training the Model
+
 - data augmentation
   - changing, resizing, adjusting, slightly cropping an image can make a model more robust because the label stays the same
   - especially useful when training for more than 5 epochs
@@ -19,6 +20,7 @@
     - can be helpful for figuring out how to gather better data as well as help with the cleaning process
 
 ## Putting Into Production
+
 - HuggingFace Spaces is a great way to deploy an ML model with Gradio (there's a blog post I can look at to see how to do this)
 - we will copy our model to the HuggingFace Spaces server and then create a user interface for it
 - very easy to create a space
@@ -30,16 +32,14 @@
 - how do we do predictions on a saved model?
   - we will need any functions that we used to create the model available in the file we are using for predictions
   - `load_learner()` to load our model into the file
-  -  we want to create a gradio function that will call our model
-  -  we can use `from nbdev.export import notebook2script` to turn our jupyter notebook into a python script! (this is what gradio expects for our app)
-  -  then git push to put app.py onto our repo and boom!
--  huggingface spaces also creates an api endpoint that we can then call within any application (i.e. one built with javascript)
--  we can create an app like this on github pages
-
+  - we want to create a gradio function that will call our model
+  - we can use `from nbdev.export import notebook2script` to turn our jupyter notebook into a python script! (this is what gradio expects for our app)
+  - then git push to put app.py onto our repo and boom!
+- huggingface spaces also creates an api endpoint that we can then call within any application (i.e. one built with javascript)
+- we can create an app like this on github pages
 
 ## Jupyter Notebook Tricks/Tips
+
 - if you put a ? before a function in jupyter notebook you'll get a short bit of information about the function
   - ?? will give you the full source code
   - `doc()` will give you a link the the full documentation
-  - 
-
