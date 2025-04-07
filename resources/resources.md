@@ -1,4 +1,4 @@
-# Resources
+# Resources Links
 ## Courses
 * [2025 Deploy ML Model in Production with FastAPI and Docker (Udemy)](https://www.udemy.com/course/nlp-with-bert-in-python/?couponCode=ST3MT200225B)
 * [Practical Deep Learning for Coders (fast.ai)](https://course.fast.ai/)
