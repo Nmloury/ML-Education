@@ -3,6 +3,7 @@
 ## Deep Learning Is for Everyone
 
 ### Myths vs Reality
+
 | Myth | Reality |
 |------|---------|
 | Lots of math | Just high school math is sufficient |
@@ -39,6 +40,7 @@
   - Visual recognition
 
 ## Neural Networks: A Brief History
+
 - 1943: Warren McCulloch and Walter Pitts developed first mathematical model of artificial neuron
   - Created "A Logical Calculus of the Ideas Immanent in Nervous Activity"
   - Modeled neuron using simple addition and thresholding
@@ -87,6 +89,7 @@
 - Start with end-to-end projects and iterate
 
 ## The Software: PyTorch, fastai, and Jupyter
+
 (And Why It Doesn't Matter)
 - PyTorch: World's fastest-growing deep learning library, used in most research papers
 - fastai: Popular library built on PyTorch, designed for interactive use
@@ -109,6 +112,7 @@
 - Training time varies based on network speed
 
 ### How Our Image Recognizer Works
+
 - Uses fastai.vision library for computer vision tasks
 - Dataset Processing:
   - Downloads Oxford-IIIT Pet Dataset (7,349 images)
@@ -150,6 +154,7 @@
   - Uses early stopping to prevent overfitting
 
 ## Deep Learning Is Not Just for Image Classification
+
 - Text Classification:
   - Sentiment analysis
   - Spam detection
