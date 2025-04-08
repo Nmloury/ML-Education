@@ -11,6 +11,7 @@
 | Lots of expensive computers | State-of-the-art work possible with free resources |
 
 ### Key Applications
+
 - Natural Language Processing (NLP)
   - Question answering
   - Speech recognition
@@ -80,6 +81,7 @@
 ## How to Learn Deep Learning
 
 ### Your Projects and Your Mindset
+
 - Choose projects you can start quickly
 - Focus on accessible data
 - Pick projects you understand
@@ -90,7 +92,6 @@
 
 ## The Software: PyTorch, fastai, and Jupyter
 
-(And Why It Doesn't Matter)
 - PyTorch: World's fastest-growing deep learning library, used in most research papers
 - fastai: Popular library built on PyTorch, designed for interactive use
 - Jupyter: Most popular tool for data science in Python
@@ -99,12 +100,14 @@
 ## Your First Model
 
 ### Getting a GPU Deep Learning Server
+
 - Access to NVIDIA GPU recommended
 - Can rent access instead of buying
 - Costs as low as $0.25 per hour
 - Some options are free
 
 ### Running Your First Notebook
+
 - Notebooks are labeled by chapter and number
 - First notebook trains a model to recognize dogs and cats
 - Uses Oxford-IIIT Pet Dataset with 7,349 images
