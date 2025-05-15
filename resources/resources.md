@@ -12,3 +12,4 @@
 * [Decoding ML Github](https://github.com/decodingml) - Proven content on designing, coding, and deploying production-grade AI, GenAI, and information retrieval systems
   * [LLM Twin Course](https://github.com/decodingml/llm-twin-course)
   * [Second Brain AI Assistant](https://github.com/decodingml/second-brain-ai-assistant-course)
+* [Causal Inference for The Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
